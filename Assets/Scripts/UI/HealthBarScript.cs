@@ -31,7 +31,7 @@ public class HealthBarScript : MonoBehaviour
         }
         else if (previousHealth > currentHealth) // taken damage
         {
-            previousHealth -= (previousHealth - damageIndicatorDrain < currentHealth ?
+            previousHealth = (previousHealth - damageIndicatorDrain < currentHealth ?
                 currentHealth : previousHealth - damageIndicatorDrain);
         }
 
