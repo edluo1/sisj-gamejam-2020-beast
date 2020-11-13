@@ -12,6 +12,7 @@ enum EnemyState
 public class BasicEnemyBehavior : MonoBehaviour
 {
 	public GameObject player; // who to target
+    public GameObject projectile; // what to use to attack
 	public float inRange; // when player is in range
 	public float chargeTime;
 	float chargeTimeRemaining;
@@ -30,12 +31,10 @@ public class BasicEnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 targetPosition = player.transform.position;
+        Vector3 direction = (targetPosition - transform.position).normalized;
+        transform.rotation = Quaternion.FromToRotation(Vector3.right, direction);
     	if (state == EnemyState.Search) {
-    		Vector3 targetPosition = player.transform.position;
-	        Vector3 direction = (targetPosition - transform.position).normalized;
-
-	        transform.rotation = Quaternion.FromToRotation(Vector3.right, direction);
-
 	        transform.Translate(Vector3.right * Time.deltaTime);
 
 	        // Debug.Log(Vector3.Distance(targetPosition, transform.position));
@@ -45,7 +44,7 @@ public class BasicEnemyBehavior : MonoBehaviour
     	}
     	else if (state == EnemyState.Charge) {
     		float chargeRatio = (chargeTimeRemaining / chargeTime);
-            Debug.Log(chargeRatio);
+            // Debug.Log(chargeRatio);
     		spriteRenderer.color = new Color(1, chargeRatio, chargeRatio); // charge up attack by turning red
     		chargeTimeRemaining -= Time.deltaTime;
     		if (chargeTimeRemaining <= 0) {
@@ -54,6 +53,9 @@ public class BasicEnemyBehavior : MonoBehaviour
     	}
     	else if (state == EnemyState.Attack) {
     		chargeTimeRemaining = chargeTime;
+
+            // Attack the player.
+            Instantiate(projectile, transform.position, transform.rotation);
 
     		spriteRenderer.color = new Color(1, 1, 1);
     		state = EnemyState.Search;
