@@ -23,7 +23,7 @@ public class BasicProjectileScript : MonoBehaviour
         {
             // Debug.Log("ow");
             col.gameObject.GetComponent<HealthScript>().TakeDamage(5);
+            Destroy(gameObject); // destroy itself
         }
-        Destroy(gameObject); // destroy itself
     }
 }
