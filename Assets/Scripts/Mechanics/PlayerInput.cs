@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     Rigidbody2D body;
+    Animator animator;
 
     float horizontal;
     float vertical;
@@ -15,7 +16,8 @@ public class PlayerInput : MonoBehaviour
 
     void Start ()
     {
-       body = GetComponent<Rigidbody2D>();
+        body = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -23,7 +25,7 @@ public class PlayerInput : MonoBehaviour
         // Gives a value between -1 and 1
         horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
         vertical = Input.GetAxisRaw("Vertical"); // -1 is down
-        attackOrder = Input.GetKeyDown(KeyCode.X);
+        attackOrder = Input.GetKeyDown(KeyCode.R); // change this later
     } 
 
     void FixedUpdate()
@@ -45,7 +47,7 @@ public class PlayerInput : MonoBehaviour
 
     void handleAttackOrder() {
         if (attackOrder) {
-            Debug.Log("Attack initiated");
+            animator.Play("Player_Attack");
         }
     }
 }

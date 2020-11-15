@@ -13,6 +13,7 @@ public class BasicEnemyBehavior : MonoBehaviour
 {
 	public GameObject player; // who to target
     public GameObject projectile; // what to use to attack
+    public float moveSpeed = 1.4f;
 	public float inRange; // when player is in range
 	public float chargeTime;
 	float chargeTimeRemaining;
@@ -35,7 +36,7 @@ public class BasicEnemyBehavior : MonoBehaviour
         Vector3 direction = (targetPosition - transform.position).normalized;
         transform.rotation = Quaternion.FromToRotation(Vector3.right, direction);
     	if (state == EnemyState.Search) {
-	        transform.Translate(Vector3.right * Time.deltaTime);
+	        transform.Translate(Vector3.right * Time.deltaTime * moveSpeed);
 
 	        // Debug.Log(Vector3.Distance(targetPosition, transform.position));
 	        if (Vector3.Distance(targetPosition, transform.position) <= inRange) {
