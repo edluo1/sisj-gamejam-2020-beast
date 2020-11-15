@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4326088713783864475}
-  - component: {fileID: 6979514731434326477}
   - component: {fileID: -7566220514760193005}
-  m_Layer: 0
+  - component: {fileID: 6979514731434326477}
+  m_Layer: 8
   m_Name: Hitbox
   m_TagString: Hitbox
   m_Icon: {fileID: 0}
@@ -32,6 +32,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7566220514760193005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565523066694223395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f6a6efd22385848b0beaa20b290f95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToGive: 2
 --- !u!61 &6979514731434326477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58,16 +71,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3154496, y: 0.47313547}
   m_EdgeRadius: 0
---- !u!114 &-7566220514760193005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1565523066694223395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5f6a6efd22385848b0beaa20b290f95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageToGive: 10

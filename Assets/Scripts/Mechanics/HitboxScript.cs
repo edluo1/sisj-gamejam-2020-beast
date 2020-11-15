@@ -2,28 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class HitboxScript : MonoBehaviour
 {
+    public bool active = true;
     public int damageToGive = 10;
+
+    BoxCollider2D box;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        box = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        box.enabled = active;
     }
 
     void OnDrawGizmos()
     {
-        /*
+        if (!box)
+            return;
+
+        var offset = box.offset;
+        var extents = box.size * 0.5f;
+        var verts = new Vector2[] {
+            transform.TransformPoint (new Vector2 (-extents.x, -extents.y) + offset),
+            transform.TransformPoint (new Vector2 (extents.x, -extents.y) + offset),
+            transform.TransformPoint (new Vector2 (extents.x, extents.y) + offset),
+            transform.TransformPoint (new Vector2 (-extents.x, extents.y) + offset) };
+
         Gizmos.color = Color.red;
-        Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.localScale);
-        Gizmos.DrawCube(Vector3.zero, new Vector3(boxSize.x * 2, boxSize.y * 2, boxSize.z * 2)); // Because size is halfExtents
-        */
+        Gizmos.DrawLine(verts[0], verts[1]);
+        Gizmos.DrawLine(verts[1], verts[2]);
+        Gizmos.DrawLine(verts[2], verts[3]);
+        Gizmos.DrawLine(verts[3], verts[0]);
     }
 }

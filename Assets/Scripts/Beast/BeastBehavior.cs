@@ -8,9 +8,11 @@ public class BeastBehavior : MonoBehaviour
     public GameObject target;
     public float fightDistance = 1.7f;
 
+    Animator animator;
+
     void Start()
     {
-
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -38,6 +40,19 @@ public class BeastBehavior : MonoBehaviour
 
     public void Attack(GameObject toTarget)
     {
-        // Debug.Log("Pow!");
+        if (!AnimatorIsPlaying("Benji_Attack"))
+        {
+            animator.Play("Benji_Attack");
+        }
+    }
+
+    bool AnimatorIsPlaying()
+    {
+        return animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1;
+    }
+
+    bool AnimatorIsPlaying(string stateName)
+    {
+        return AnimatorIsPlaying() && animator.GetCurrentAnimatorStateInfo(0).IsName(stateName);
     }
 }
