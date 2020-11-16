@@ -10,10 +10,13 @@ public class HealthScript : MonoBehaviour
 
     public HealthBarScript healthBarScript; // Only for use by player. Ties health to health bar.
 
+    Animator animator;
+    public AnimationClip deathClip;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,8 +31,18 @@ public class HealthScript : MonoBehaviour
         if (currentHealth <= 0)
         {
             // TODO add code to play death animation
-
-            Destroy(gameObject);
+            if (animator && deathClip)
+            {
+                if (!Tools.AnimatorIsPlaying(animator, deathClip.name))
+                {
+                    animator.Play(deathClip.name);
+                }
+                Destroy(gameObject, deathClip.length);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

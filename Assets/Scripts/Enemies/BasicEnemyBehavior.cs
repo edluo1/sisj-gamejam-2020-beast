@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-enum EnemyState 
+enum BasicEnemyState 
 {
 	Search,
 	Charge,
@@ -11,7 +11,7 @@ enum EnemyState
 
 public class BasicEnemyBehavior : MonoBehaviour
 {
-	public GameObject player; // who to target
+	public GameObject target; // who to target
     public GameObject projectile; // what to use to attack
     public float moveSpeed = 1.4f;
 	public float inRange; // when player is in range
@@ -19,12 +19,12 @@ public class BasicEnemyBehavior : MonoBehaviour
 	float chargeTimeRemaining;
 	SpriteRenderer spriteRenderer;
 
-	EnemyState state;
+	BasicEnemyState state;
 
     // Start is called before the first frame update
     void Start()
     {
-        state = EnemyState.Search;
+        state = BasicEnemyState.Search;
         spriteRenderer = GetComponent<SpriteRenderer>();
         chargeTimeRemaining = chargeTime;
     }
@@ -32,34 +32,34 @@ public class BasicEnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 targetPosition = player.transform.position;
+        Vector3 targetPosition = target.transform.position;
         Vector3 direction = (targetPosition - transform.position).normalized;
         transform.rotation = Quaternion.FromToRotation(Vector3.right, direction);
-    	if (state == EnemyState.Search) {
+    	if (state == BasicEnemyState.Search) {
 	        transform.Translate(Vector3.right * Time.deltaTime * moveSpeed);
 
 	        // Debug.Log(Vector3.Distance(targetPosition, transform.position));
 	        if (Vector3.Distance(targetPosition, transform.position) <= inRange) {
-	        	state = EnemyState.Charge;
+	        	state = BasicEnemyState.Charge;
 	        }
     	}
-    	else if (state == EnemyState.Charge) {
+    	else if (state == BasicEnemyState.Charge) {
     		float chargeRatio = (chargeTimeRemaining / chargeTime);
             // Debug.Log(chargeRatio);
     		spriteRenderer.color = new Color(1, chargeRatio, chargeRatio); // charge up attack by turning red
     		chargeTimeRemaining -= Time.deltaTime;
     		if (chargeTimeRemaining <= 0) {
-    			state = EnemyState.Attack;
+    			state = BasicEnemyState.Attack;
     		}
     	}
-    	else if (state == EnemyState.Attack) {
+    	else if (state == BasicEnemyState.Attack) {
     		chargeTimeRemaining = chargeTime;
 
             // Attack the player.
             Instantiate(projectile, transform.position, transform.rotation);
 
     		spriteRenderer.color = new Color(1, 1, 1);
-    		state = EnemyState.Search;
+    		state = BasicEnemyState.Search;
     	}
 
     }
