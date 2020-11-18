@@ -22,13 +22,17 @@ public class HurtboxScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         // Debug.Log("entered");
-        if (col.gameObject.tag == "Hitbox") // hit by hitbox
+        if (col.gameObject.tag == "Hitbox" && col.transform.parent.tag != transform.parent.tag) // hit by hitbox of someone who isn't you
         {
             HitboxScript hitbox = col.gameObject.GetComponent<HitboxScript>();
             if (hitbox.active)
             {
                 int damageTaken = col.gameObject.GetComponent<HitboxScript>().damageToGive;
                 transform.parent.GetComponent<HealthScript>().TakeDamage(damageTaken);
+                if (hitbox.destroyOnHit)
+                {
+                    hitbox.DestroyOnHit();
+                }
             }
         }
     }
@@ -36,13 +40,17 @@ public class HurtboxScript : MonoBehaviour
     void OnTriggerStay2D(Collider2D col)
     {
         Debug.Log("entered");
-        if (col.gameObject.tag == "Hitbox") // hit by hitbox
+        if (col.gameObject.tag == "Hitbox" && col.transform.parent.tag != transform.parent.tag) // hit by hitbox of someone who isn't you
         {
             HitboxScript hitbox = col.gameObject.GetComponent<HitboxScript>();
             if (hitbox.active)
             {
                 int damageTaken = col.gameObject.GetComponent<HitboxScript>().damageToGive;
                 transform.parent.GetComponent<HealthScript>().TakeDamage(damageTaken);
+                if (hitbox.destroyOnHit)
+                {
+                    hitbox.DestroyOnHit();
+                }
             }
         }
     }

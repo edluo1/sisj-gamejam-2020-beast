@@ -6,6 +6,7 @@ using UnityEngine;
 public class HitboxScript : MonoBehaviour
 {
     public bool active = true;
+    public bool destroyOnHit = false;
     public int damageToGive = 10;
 
     BoxCollider2D box;
@@ -20,6 +21,11 @@ public class HitboxScript : MonoBehaviour
     void Update()
     {
         box.enabled = active;
+    }
+
+    public void DestroyOnHit() // Destroys game object on hit (for projectiles)
+    {
+        Destroy(transform.parent.gameObject);
     }
 
     void OnDrawGizmos()

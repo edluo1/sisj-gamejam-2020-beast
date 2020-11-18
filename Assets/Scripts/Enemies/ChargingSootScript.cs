@@ -18,6 +18,9 @@ public class ChargingSootScript : MonoBehaviour
     public float moveSpeed = 1f;
 
     public float rechargeTime = 4f;
+    float rechargeTimeLeft;
+
+    public float chargeSpeed = 4f;
 
     Animator animator;
     SootEnemyState state;
@@ -27,6 +30,7 @@ public class ChargingSootScript : MonoBehaviour
     {
         state = SootEnemyState.Search;
         animator = GetComponent<Animator>();
+        rechargeTimeLeft = rechargeTime;
     }
 
     // Update is called once per frame
@@ -42,20 +46,36 @@ public class ChargingSootScript : MonoBehaviour
 
                 if (Vector3.Distance(targetPosition, transform.position) <= inRange)
                 {
-                    chargeDirection = new Vector2(transform.position.x - targetPosition.x, transform.position.y - targetPosition.y);
-                    state = SootEnemyState.Attack;
+                    chargeDirection = new Vector2(targetPosition.x - transform.position.x, targetPosition.y - transform.position.y).normalized;
+                    state = SootEnemyState.Charge;
                 }
                 break;
-            case SootEnemyState.Attack:
+            case SootEnemyState.Charge:
                 if (!Tools.AnimatorIsPlaying(animator, "Soot_Attack"))
                 {
                     animator.Play("Soot_Attack");
                 }
-                else
+                break;
+            case SootEnemyState.Attack:
+                transform.position = transform.position + (Vector3) chargeDirection * Time.deltaTime * chargeSpeed;
+                if (!Tools.AnimatorIsPlaying(animator, "Soot_Attack"))
+                {
+                    state = SootEnemyState.Recharge;
+                }
+                break;
+            case SootEnemyState.Recharge:
+                rechargeTimeLeft -= Time.deltaTime;
+                if (rechargeTimeLeft <= 0)
                 {
                     state = SootEnemyState.Search;
+                    rechargeTimeLeft = rechargeTime;
                 }
                 break;
         } 
+    }
+
+    public void StartAttack()
+    {
+        state = SootEnemyState.Attack;
     }
 }

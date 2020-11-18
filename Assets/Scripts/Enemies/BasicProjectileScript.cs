@@ -19,10 +19,10 @@ public class BasicProjectileScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player" || col.gameObject.tag == "Beast" || col.gameObject.tag == "Wall")
         {
             // Debug.Log("ow");
-            col.gameObject.GetComponent<HealthScript>().TakeDamage(5);
+            // col.gameObject.GetComponent<HealthScript>().TakeDamage(5);
             Destroy(gameObject); // destroy itself
         }
     }

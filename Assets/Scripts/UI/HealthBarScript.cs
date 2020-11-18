@@ -12,6 +12,8 @@ public class HealthBarScript : MonoBehaviour
     int previousHealth; // indicates damage taken
 
     public int damageIndicatorDrain = 1;
+    public float waitTillDrain = 1f;
+    float waitTillDrainLeft;
 
     public Image currentHealthImage, previousHealthImage;
 
@@ -19,6 +21,7 @@ public class HealthBarScript : MonoBehaviour
     void Start()
     {
         previousHealth = currentHealth;
+        waitTillDrainLeft = waitTillDrain;
     }
 
     // Update is called once per frame
@@ -26,13 +29,26 @@ public class HealthBarScript : MonoBehaviour
     {
         if (previousHealth < currentHealth) // healing from damage
         {
-            previousHealth = ( previousHealth + damageIndicatorDrain > currentHealth ? 
-                currentHealth : previousHealth + damageIndicatorDrain );
+            waitTillDrainLeft -= Time.deltaTime;
+            if (waitTillDrainLeft <= 0)
+            {
+                previousHealth = (previousHealth + damageIndicatorDrain > currentHealth ?
+                    currentHealth : previousHealth + damageIndicatorDrain);
+            }
+            
         }
         else if (previousHealth > currentHealth) // taken damage
         {
-            previousHealth = (previousHealth - damageIndicatorDrain < currentHealth ?
-                currentHealth : previousHealth - damageIndicatorDrain);
+            waitTillDrainLeft -= Time.deltaTime;
+            if (waitTillDrainLeft <= 0)
+            {
+                previousHealth = (previousHealth - damageIndicatorDrain < currentHealth ?
+                    currentHealth : previousHealth - damageIndicatorDrain);
+            }
+        }
+        if (previousHealth == currentHealth) // Reset wait time once health catches up
+        {
+            waitTillDrainLeft = waitTillDrain;
         }
 
         SetHealthBarValues();
