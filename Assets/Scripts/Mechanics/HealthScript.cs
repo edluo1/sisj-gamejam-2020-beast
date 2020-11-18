@@ -46,8 +46,20 @@ public class HealthScript : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damageTaken)
+    // Modifies current health by `value` amount
+    public void ChangeHealth(int value)
     {
-        currentHealth -= damageTaken;
+        if (currentHealth + value < 0)
+        {
+            currentHealth = 0;
+        } 
+        else if (currentHealth + value > maxHealth)
+        {
+            currentHealth = maxHealth;
+        } 
+        else
+        {
+            currentHealth += value;
+        }
     }
 }

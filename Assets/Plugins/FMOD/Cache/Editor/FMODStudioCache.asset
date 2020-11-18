@@ -31,7 +31,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD/Music/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637414045850000000
+  lastModified: 637414516484179960
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -70,12 +70,12 @@ MonoBehaviour:
   Path: event:/Player_Theme_Battle_mx
   guid: 4a357cd71ec6634998130768fac8ec00
   Banks:
-  - {fileID: 4488553807021028929}
+  - {fileID: 1760681458566116583}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 4922603126527716393}
+  - {fileID: 1883171470584102547}
   MinDistance: 0
   MaxDistance: 0
   Length: 96219
@@ -111,16 +111,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -6795540343255854324}
-  - {fileID: 4488553807021028929}
+  - {fileID: 1760681458566116583}
   EditorEvents:
   - {fileID: -1726540591057127523}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 4488553807021028929}
+  - {fileID: 1760681458566116583}
   StringsBanks:
   - {fileID: -6795540343255854324}
-  stringsBankWriteTime: 637414045850000000
+  stringsBankWriteTime: 637414516484179960
   cacheVersion: 3
+--- !u!114 &1760681458566116583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637414516484169986
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &1883171470584102547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Theme_Battle_mx/Enemy
+  m_EditorClassIdentifier: 
+  Name: Enemy
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &3435465633992438331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +195,7 @@ MonoBehaviour:
   lastModified: 637414045850000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &4922603126527716393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +212,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &8660201050927060716
 MonoBehaviour:
   m_ObjectHideFlags: 0
