@@ -40,19 +40,9 @@ public class BeastBehavior : MonoBehaviour
 
     public void Attack(GameObject toTarget)
     {
-        if (!AnimatorIsPlaying("Benji_Attack"))
+        if (!Tools.AnimatorIsPlaying(animator, "Benji_Attack"))
         {
             animator.Play("Benji_Attack");
         }
-    }
-
-    bool AnimatorIsPlaying()
-    {
-        return animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1;
-    }
-
-    bool AnimatorIsPlaying(string stateName)
-    {
-        return AnimatorIsPlaying() && animator.GetCurrentAnimatorStateInfo(0).IsName(stateName);
     }
 }
