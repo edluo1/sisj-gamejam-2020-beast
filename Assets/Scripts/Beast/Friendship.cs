@@ -21,13 +21,12 @@ public class Friendship : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.LogWarning(friendshipValue);
+
     }
 
     public void ChangeFriendship(int value)
     {
-        friendshipValue = friendshipValue + value;
+        friendshipValue += value;
         friendshipDebugText.text = "Friendship: " + friendshipValue;
-
     }
 }

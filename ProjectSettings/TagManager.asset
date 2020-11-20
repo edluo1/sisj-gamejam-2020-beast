@@ -9,6 +9,7 @@ TagManager:
   - Hurtbox
   - Enemy
   - Wall
+  - FriendshipText
   layers:
   - Default
   - TransparentFX
