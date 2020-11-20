@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{e4eb3d41-8ddf-4d2d-9475-3aa65212f6cb}">
+		<property name="assetPath">
+			<value>tubular bells_2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.7141496598639456</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ded193ad-7efd-46e5-8d52-cbaeb0877b7b}</destination>
+		</relationship>
+	</object>
+</objects>
