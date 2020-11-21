@@ -9,6 +9,7 @@ TagManager:
   - Hurtbox
   - Enemy
   - Wall
+  - SpawnDirector
   layers:
   - Default
   - TransparentFX
