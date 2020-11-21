@@ -39,7 +39,7 @@ public class HurtboxScript : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D col)
     {
-        Debug.Log("entered");
+        //Debug.Log("entered");
         if (col.gameObject.tag == "Hitbox" && col.transform.parent.tag != transform.parent.tag) // hit by hitbox of someone who isn't you
         {
             HitboxScript hitbox = col.gameObject.GetComponent<HitboxScript>();

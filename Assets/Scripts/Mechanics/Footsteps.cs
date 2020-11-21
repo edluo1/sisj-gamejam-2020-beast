@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Footsteps : MonoBehaviour
 {
+    [FMODUnity.EventRef]
+    public string FootstepEventPath = "";
 
-    private FMOD.Studio.EventInstance footsteps;
+    public FMOD.Studio.EventInstance footsteps;
 
     private float timer = 0.0f;
-    float footstepSpeed = 0.2f;
+    public float footstepIntervalInSeconds = 0.4f;
 
     private Vector3 previousPosition;
 
@@ -35,7 +37,7 @@ public class Footsteps : MonoBehaviour
 
         if (isMoving)
         {
-            if (timer > footstepSpeed)
+            if (timer > footstepIntervalInSeconds)
             {
                 PlayFootstep();
                 timer = 0.0f;
@@ -46,11 +48,10 @@ public class Footsteps : MonoBehaviour
 
     private void PlayFootstep()
     {
-        // TODO: Marcy add correct footsteps event
-        //footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/Footsteps");
-        //footsteps.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-        //footsteps.start();
-        //footsteps.release();
+        footsteps = FMODUnity.RuntimeManager.CreateInstance(FootstepEventPath);
+        footsteps.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        footsteps.start();
+        footsteps.release();
         Debug.Log("footstep played");
     }
 }

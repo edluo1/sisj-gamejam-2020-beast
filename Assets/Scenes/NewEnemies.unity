@@ -1867,6 +1867,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -589386937747751460, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
+      propertyPath: footstepSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -589386937747751460, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
+      propertyPath: FootstepEventPath
+      value: event:/Footsteps
+      objectReference: {fileID: 0}
     - target: {fileID: 61450656, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
       propertyPath: healthBarScript
       value: 
