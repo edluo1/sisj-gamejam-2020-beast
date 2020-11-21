@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 1065621366}
   - component: {fileID: 1065621365}
   - component: {fileID: 1065621367}
+  - component: {fileID: 8650063462949623152}
   m_Layer: 0
   m_Name: Basic Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,9 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4520e466b9b6a0044970da2127bf603c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 10
+  currentHealth: 10
   healthBarScript: {fileID: 0}
+  deathClip: {fileID: 7400000, guid: 1eabdc3870f3f964ab6c669abdd1b68b, type: 2}
 --- !u!114 &422125399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7549020c5cece144a9150f2c148aaf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  target: {fileID: 0}
   projectile: {fileID: 5613120399142303508, guid: d1287da7a9c979944ae00286912acbe2, type: 3}
   moveSpeed: 1.4
   inRange: 5
@@ -181,6 +183,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isTargeted: 0
   reticule: {fileID: 484664386716918292, guid: 50ab2860a18d24a4387845e9ddb04865, type: 3}
+--- !u!95 &8650063462949623152
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3421220267999204999}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 23b27ef2a823aed4a8d11332844922de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &7647856903130660701
 PrefabInstance:
   m_ObjectHideFlags: 0

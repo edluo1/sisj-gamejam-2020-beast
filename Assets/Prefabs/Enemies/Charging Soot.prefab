@@ -197,7 +197,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 1201a5dbf1dea2e47925427059872f18, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -216,7 +216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7566220514760193005, guid: 72eda8fd761f82d4f9e6d65494972f1c, type: 3}
       propertyPath: damageToGive
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1565523066694223395, guid: 72eda8fd761f82d4f9e6d65494972f1c, type: 3}
       propertyPath: m_Name
