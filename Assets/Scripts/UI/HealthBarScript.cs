@@ -17,6 +17,8 @@ public class HealthBarScript : MonoBehaviour
 
     public Image currentHealthImage, previousHealthImage;
 
+    public Text hpText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,5 +65,7 @@ public class HealthBarScript : MonoBehaviour
         // Set health fills
         currentHealthImage.fillAmount = currentHealthFill;
         previousHealthImage.fillAmount = previousHealthFill;
+
+        hpText.text = currentHealth + " / " + maxHealth;
     }
 }
