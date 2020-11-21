@@ -1,0 +1,8 @@
+{2e72e27e-c066-411d-a177-bf4f6d537eb6} bank:/Master
+{b66fc2aa-b11d-0d5f-273e-35b19ca0782e} bank:/Master.strings
+{1071ad91-5c3a-417b-b95b-822521446445} bus:/
+{c4552db8-3576-462c-a7d0-42c5440b60de} bus:/Reverb
+{86216660-a3f3-4546-979e-6787c6da7e15} event:/Footsteps
+{d77c354a-c61e-4963-9813-0768fac8ec00} event:/Player_Theme_Battle_mx
+{69848458-0055-44d5-b082-17cdbc9ef4ba} event:/Swing_Weapon
+{9d6328d3-cc27-4c39-a117-889643b7ad88} parameter:/Enemy

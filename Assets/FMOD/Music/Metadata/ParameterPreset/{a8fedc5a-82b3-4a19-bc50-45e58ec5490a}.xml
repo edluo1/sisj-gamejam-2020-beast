@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{a8fedc5a-82b3-4a19-bc50-45e58ec5490a}">
+		<property name="name">
+			<value>Battle_State</value>
+		</property>
+		<relationship name="folder">
+			<destination>{34bb3a2b-2858-4c6e-b831-72da62050de7}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{910f9af7-8249-4a03-837b-eccd485af3f7}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{910f9af7-8249-4a03-837b-eccd485af3f7}">
+		<property name="isReadOnly">
+			<value>true</value>
+		</property>
+		<property name="isHeld">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

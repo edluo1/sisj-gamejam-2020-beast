@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 424464439}
   - component: {fileID: 424464438}
   - component: {fileID: 424464441}
+  - component: {fileID: 424464442}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -219,8 +220,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CollisionTag: Enemy
+  Event: event:/Player_Theme_Battle_mx
+  PlayEvent: 1
+  StopEvent: 5
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &424464442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424464437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Player_Theme
+  Event: event:/Dungeon_Ambience
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1
@@ -257,6 +281,38 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 919260822}
+    - target: {fileID: 1065621365, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
+      propertyPath: m_Size.x
+      value: 0.24567969
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065621365, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5048023
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065621365, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0052941665
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065621365, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.114183635
+      objectReference: {fileID: 0}
+    - target: {fileID: 3243600902328099928, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
+      propertyPath: m_Size.x
+      value: 3.8657625
+      objectReference: {fileID: 0}
+    - target: {fileID: 3243600902328099928, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
+      propertyPath: m_Size.y
+      value: 3.291385
+      objectReference: {fileID: 0}
+    - target: {fileID: 3243600902328099928, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.4497546
+      objectReference: {fileID: 0}
+    - target: {fileID: 3243600902328099928, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.60610116
+      objectReference: {fileID: 0}
     - target: {fileID: 3421220267999204999, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
       propertyPath: m_Name
       value: Angry Firer
@@ -270,12 +326,20 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3421220267999205017, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0843703
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421220267999205017, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.83240813
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421220267999205017, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.99
+      value: 3.82
       objectReference: {fileID: 0}
     - target: {fileID: 3421220267999205017, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.87
+      value: 0.876
       objectReference: {fileID: 0}
     - target: {fileID: 3421220267999205017, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1827,6 +1891,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -589386937747751460, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
+      propertyPath: footstepSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -589386937747751460, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
+      propertyPath: FootstepEventPath
+      value: event:/Footsteps
+      objectReference: {fileID: 0}
+    - target: {fileID: -589386937747751460, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
+      propertyPath: footstepIntervalInSeconds
+      value: 0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 61450656, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
       propertyPath: healthBarScript
       value: 
@@ -1959,6 +2035,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a1808f2949754349ae7d3f1a7859d4e, type: 3}
+--- !u!1 &1733979766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2059270326138900109, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
+  m_PrefabInstance: {fileID: 619614341}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1733979771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733979766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Enemy
+  Emitters:
+  - Target: {fileID: 424464441}
+    Params:
+    - Name: Enemy
+      Value: 1
+  TriggerEvent: 5
 --- !u!1 &1761324308
 GameObject:
   m_ObjectHideFlags: 0
