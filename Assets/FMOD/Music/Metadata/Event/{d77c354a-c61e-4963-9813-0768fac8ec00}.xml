@@ -218,6 +218,12 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{715eb7f4-4793-42d5-a08c-2a82c9a184c7}">
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
+		<property name="triggerProbability">
+			<value>59.5</value>
+		</property>
 		<property name="start">
 			<value>76</value>
 		</property>
@@ -269,6 +275,12 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{868cf1e4-fba4-4970-a72c-5c1be63d5925}">
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
+		<property name="triggerProbability">
+			<value>40</value>
+		</property>
 		<property name="start">
 			<value>76</value>
 		</property>
@@ -318,7 +330,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{9dade37b-2977-409f-ae8f-66bc66e3400d}">
 		<property name="volume">
-			<value>4</value>
+			<value>7</value>
 		</property>
 		<property name="name">
 			<value>Atmospheric</value>
@@ -334,6 +346,12 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{930b793e-3612-40a6-8ae2-eeeec31b8ca6}">
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
+		<property name="triggerProbability">
+			<value>49.5</value>
+		</property>
 		<property name="start">
 			<value>76.000026574039097</value>
 		</property>
@@ -368,6 +386,12 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{2841f2dd-953b-4f24-a28d-c50770bd33ab}">
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
+		<property name="triggerProbability">
+			<value>57.5</value>
+		</property>
 		<property name="start">
 			<value>79.788532321165533</value>
 		</property>
@@ -377,6 +401,9 @@
 		<property name="color">
 			<value>Magenta</value>
 		</property>
+		<relationship name="fadeOutCurve">
+			<destination>{216ab4c4-3e51-49f5-bce5-4619b72a9898}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{ee19d37e-f369-4e7e-ba76-0cc015f0d38f}</destination>
 		</relationship>
@@ -413,6 +440,12 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{23e00e70-7aec-4e65-9b58-0e95f07560ac}">
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
+		<property name="triggerProbability">
+			<value>70</value>
+		</property>
 		<property name="start">
 			<value>87.066944677487371</value>
 		</property>
@@ -444,6 +477,12 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{ed42611c-4408-48b8-ad10-489504b0395f}">
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
+		<property name="triggerProbability">
+			<value>59.5</value>
+		</property>
 		<property name="start">
 			<value>87.356923125763245</value>
 		</property>
@@ -676,6 +715,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{eb0b321a-cd4e-43b7-ab39-d18cfdf6c0ad}" />
+	<object class="FadeCurve" id="{216ab4c4-3e51-49f5-bce5-4619b72a9898}">
+		<relationship name="startPoint">
+			<destination>{572071c4-6b2a-4a27-becb-0f5e1d54251a}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{ce60bf9c-3283-48cf-a0de-ae15d1a46b48}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{a54082f7-9573-4242-82ba-979651e1bb0a}">
 		<relationship name="effects">
 			<destination>{54880852-7a34-4494-b096-8e3806798fad}</destination>
@@ -806,6 +853,25 @@
 	<object class="MixerBusFader" id="{5dbadcae-5b00-4efd-a3f1-8d447c5f493d}" />
 	<object class="MixerBusFader" id="{0e941343-44cc-4e4a-854d-2486f56c670d}" />
 	<object class="MixerBusFader" id="{cc474068-5d0c-42aa-b5a6-6d914b51c438}" />
+	<object class="AutomationPoint" id="{572071c4-6b2a-4a27-becb-0f5e1d54251a}">
+		<property name="position">
+			<value>89.883226980638526</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+		<property name="curveShape">
+			<value>0.25471893</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{ce60bf9c-3283-48cf-a0de-ae15d1a46b48}">
+		<property name="position">
+			<value>91.156967695315188</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{54880852-7a34-4494-b096-8e3806798fad}" />
 	<object class="MixerBusFader" id="{e898266c-fd3d-43b2-913a-eff4f924654c}" />
 	<object class="AutomationPoint" id="{a8928e9c-9ca7-4c12-9870-ed73a8245b97}">
