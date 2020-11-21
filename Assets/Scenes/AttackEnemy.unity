@@ -123,6 +123,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &133770072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8309248182703391118, guid: 2a1808f2949754349ae7d3f1a7859d4e, type: 3}
+  m_PrefabInstance: {fileID: 7079281474220260509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &133770079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133770072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8743417cd8ca6b64f8ceb07c1ec648cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FootstepEventPath: event:/Benji_Footsteps
+  footstepIntervalInSeconds: 0.9
 --- !u!1 &200383532
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,6 +915,8 @@ GameObject:
   - component: {fileID: 1797817249}
   - component: {fileID: 1797817248}
   - component: {fileID: 1797817247}
+  - component: {fileID: 1797817250}
+  - component: {fileID: 1797817251}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -968,6 +989,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1797817250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797817246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Player_Theme_Battle_mx
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1797817251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797817246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Dungeon_Ambience
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!114 &1807639456 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8707973025644443025, guid: 8d330a50a0f8c444faefddb752968777, type: 3}
@@ -2387,6 +2454,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -589386937747751460, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
+      propertyPath: FootstepEventPath
+      value: event:/Footsteps
+      objectReference: {fileID: 0}
+    - target: {fileID: -589386937747751460, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
+      propertyPath: footstepIntervalInSeconds
+      value: 0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 61450656, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
       propertyPath: healthBarScript
       value: 
