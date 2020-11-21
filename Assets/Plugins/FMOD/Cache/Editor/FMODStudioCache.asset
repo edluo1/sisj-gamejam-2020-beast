@@ -39,6 +39,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 400
+--- !u!114 &-8588263293510787138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637414979696911389
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-8562162882589857159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD/Music/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637414949860000000
+  lastModified: 637414979697011132
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -522,12 +540,12 @@ MonoBehaviour:
   Path: event:/Player_Theme_Battle_mx
   guid: 4a357cd71ec6634998130768fac8ec00
   Banks:
-  - {fileID: 2777853133137671398}
+  - {fileID: -8588263293510787138}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 4946805904963674960}
+  - {fileID: 5991887640547907389}
   MinDistance: 0
   MaxDistance: 0
   Length: 96219
@@ -632,7 +650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -6795540343255854324}
-  - {fileID: 2777853133137671398}
+  - {fileID: -8588263293510787138}
   EditorEvents:
   - {fileID: -1726540591057127523}
   - {fileID: 4607927052349194743}
@@ -641,10 +659,10 @@ MonoBehaviour:
   - {fileID: 6265591246110122051}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 2777853133137671398}
+  - {fileID: -8588263293510787138}
   StringsBanks:
   - {fileID: -6795540343255854324}
-  stringsBankWriteTime: 637414949860000000
+  stringsBankWriteTime: 637414979697011132
   cacheVersion: 3
 --- !u!114 &110313923985960259
 MonoBehaviour:
@@ -837,7 +855,7 @@ MonoBehaviour:
   lastModified: 637414949860000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &2856900827676617946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1050,7 +1068,7 @@ MonoBehaviour:
   Path: event:/Swing_Weapon
   guid: 588484695500d544b08217cdbc9ef4ba
   Banks:
-  - {fileID: 2777853133137671398}
+  - {fileID: -8588263293510787138}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1109,7 +1127,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &5042776443467391097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,7 +1143,7 @@ MonoBehaviour:
   Path: event:/Footsteps
   guid: 60662186f3a34645979e6787c6da7e15
   Banks:
-  - {fileID: 2777853133137671398}
+  - {fileID: -8588263293510787138}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1168,6 +1186,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &5991887640547907389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Theme_Battle_mx/Enemy
+  m_EditorClassIdentifier: 
+  Name: Enemy
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &6107698018386797235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1200,7 +1235,7 @@ MonoBehaviour:
   Path: event:/Benji_Footsteps
   guid: e02de0444387ba4bbacc87b16f27ad2b
   Banks:
-  - {fileID: 2777853133137671398}
+  - {fileID: -8588263293510787138}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1417,7 +1452,7 @@ MonoBehaviour:
   Path: event:/Dungeon_Ambience
   guid: d728eed6a485b14eb94a76524824acc1
   Banks:
-  - {fileID: 2777853133137671398}
+  - {fileID: -8588263293510787138}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
