@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{37b0ca92-f123-4cc2-8027-eccc9d55fdd4}">
+		<property name="assetPath">
+			<value>sand_light_falling_in_cave_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>11.25625850340136</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ded193ad-7efd-46e5-8d52-cbaeb0877b7b}</destination>
+		</relationship>
+	</object>
+</objects>

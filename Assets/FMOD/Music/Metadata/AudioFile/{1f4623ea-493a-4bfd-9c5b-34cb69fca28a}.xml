@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.00.00">
-	<object class="AudioFile" id="{f0939bfe-955c-45f3-8d29-e0b49fd34966}">
+	<object class="AudioFile" id="{1f4623ea-493a-4bfd-9c5b-34cb69fca28a}">
 		<property name="assetPath">
-			<value>stone hit dirt_Mid Side_04.wav</value>
+			<value>cave_drip_06.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>96</value>
+			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>1.04</value>
+			<value>1.4773922902494332</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{ded193ad-7efd-46e5-8d52-cbaeb0877b7b}</destination>
