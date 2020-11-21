@@ -9,6 +9,7 @@ TagManager:
   - Hurtbox
   - Enemy
   - Wall
+  - FriendshipText
   - SpawnDirector
   layers:
   - Default

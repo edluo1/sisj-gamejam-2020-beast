@@ -27,7 +27,7 @@ public class HurtboxScript : MonoBehaviour
             if (hitbox.active)
             {
                 int damageTaken = col.gameObject.GetComponent<HitboxScript>().damageToGive;
-                transform.parent.GetComponent<HealthScript>().TakeDamage(damageTaken);
+                transform.parent.GetComponent<HealthScript>().ChangeHealth(-damageTaken);
                 if (hitbox.destroyOnHit)
                 {
                     hitbox.DestroyOnHit();
@@ -44,7 +44,7 @@ public class HurtboxScript : MonoBehaviour
             if (hitbox.active)
             {
                 int damageTaken = col.gameObject.GetComponent<HitboxScript>().damageToGive;
-                transform.parent.GetComponent<HealthScript>().TakeDamage(damageTaken);
+                transform.parent.GetComponent<HealthScript>().ChangeHealth(-damageTaken);
                 if (hitbox.destroyOnHit)
                 {
                     hitbox.DestroyOnHit();

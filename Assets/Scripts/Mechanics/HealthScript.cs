@@ -74,4 +74,21 @@ public class HealthScript : MonoBehaviour
             director.GetComponent<SpawnDirectorScript>().ReportDeath();
         }
     }
+    
+    // Modifies current health by `value` amount
+    public void ChangeHealth(int value)
+    {
+        if (currentHealth + value < 0)
+        {
+            currentHealth = 0;
+        } 
+        else if (currentHealth + value > maxHealth)
+        {
+            currentHealth = maxHealth;
+        } 
+        else
+        {
+            currentHealth += value;
+        }
+    }
 }
