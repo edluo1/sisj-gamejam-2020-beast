@@ -8,8 +8,6 @@ public class HealthScript : MonoBehaviour
 
     public int currentHealth = 100;
 
-    bool deadReported;
-
     public HealthBarScript healthBarScript; // Only for use by player. Ties health to health bar.
 
     Animator animator;
@@ -19,7 +17,6 @@ public class HealthScript : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        deadReported = false;
     }
 
     // Update is called once per frame
@@ -33,45 +30,24 @@ public class HealthScript : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            BecomeDead();
+            // TODO add code to play death animation
+            if (animator && deathClip)
+            {
+                if (!Tools.AnimatorIsPlaying(animator, deathClip.name))
+                {
+                    animator.Play(deathClip.name);
+                }
+                Destroy(gameObject, deathClip.length);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
     public void TakeDamage(int damageTaken)
     {
         currentHealth -= damageTaken;
-    }
-
-    public void BecomeDead()
-    {
-        if (gameObject.tag == "Enemy")
-        {
-            if (!deadReported)
-            {
-                ReportDeath();
-            }
-        }
-        deadReported = true;
-        if (animator && deathClip)
-        {
-            if (!Tools.AnimatorIsPlaying(animator, deathClip.name))
-            {
-                animator.Play(deathClip.name);
-            }
-            Destroy(gameObject, deathClip.length);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    public void ReportDeath()
-    {
-        GameObject[] directors = GameObject.FindGameObjectsWithTag("SpawnDirector");
-        foreach (GameObject director in directors)
-        {
-            director.GetComponent<SpawnDirectorScript>().ReportDeath();
-        }
     }
 }
