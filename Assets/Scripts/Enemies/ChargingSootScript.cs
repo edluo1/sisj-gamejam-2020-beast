@@ -31,6 +31,10 @@ public class ChargingSootScript : MonoBehaviour
         state = SootEnemyState.Search;
         animator = GetComponent<Animator>();
         rechargeTimeLeft = rechargeTime;
+        if (target == null)
+        {
+            target = GameObject.FindGameObjectsWithTag("Player")[0];
+        }
     }
 
     // Update is called once per frame
