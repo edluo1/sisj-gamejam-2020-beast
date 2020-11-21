@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 424464439}
   - component: {fileID: 424464438}
   - component: {fileID: 424464441}
+  - component: {fileID: 424464442}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -223,6 +224,29 @@ MonoBehaviour:
   Event: event:/Player_Theme_Battle_mx
   PlayEvent: 1
   StopEvent: 5
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &424464442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424464437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Dungeon_Ambience
+  PlayEvent: 1
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -1874,6 +1898,10 @@ PrefabInstance:
     - target: {fileID: -589386937747751460, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
       propertyPath: FootstepEventPath
       value: event:/Footsteps
+      objectReference: {fileID: 0}
+    - target: {fileID: -589386937747751460, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
+      propertyPath: footstepIntervalInSeconds
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 61450656, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
       propertyPath: healthBarScript
