@@ -57,6 +57,45 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-8298823811764798104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/New Event
+  m_EditorClassIdentifier: 
+  Path: event:/New Event
+  guid: d728eed6a485b14eb94a76524824acc1
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 90000
+--- !u!114 &-7615485404320349000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Theme_Battle_mx/Enemy
+  m_EditorClassIdentifier: 
+  Name: Enemy
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-7433303863062775683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,12 +127,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD/Music/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637414894300000000
+  lastModified: 637414924130000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 890
+    Value: 982
   Exists: 1
+--- !u!114 &-6754630029346598489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Theme_Battle_mx/Enemy
+  m_EditorClassIdentifier: 
+  Name: Enemy
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-6750257399143767100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +167,41 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-6686116405605177614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Theme_Battle_mx/Enemy
+  m_EditorClassIdentifier: 
+  Name: Enemy
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-6632069393161716956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637414914120000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-6423420915014863005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +217,24 @@ MonoBehaviour:
   Path: Assets/FMOD/Music/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637414884840000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-6404028610809871925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637414922640000000
   LoadResult: 0
   FileSizes: []
   Exists: 0
@@ -147,6 +256,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-5927509370052000878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637414912150000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-5808722904561535357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +292,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-5578926093627541926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Theme_Battle_mx/Enemy
+  m_EditorClassIdentifier: 
+  Name: Enemy
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-5084824252017480559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +324,24 @@ MonoBehaviour:
   Path: Assets/FMOD/Music/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637414893820000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-4679614832040448664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637414923370000000
   LoadResult: 0
   FileSizes: []
   Exists: 0
@@ -200,8 +362,25 @@ MonoBehaviour:
   lastModified: 637414894300000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3979582125465317494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Theme_Battle_mx/Enemy
+  m_EditorClassIdentifier: 
+  Name: Enemy
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-3536148238373217684
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,6 +432,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-2645792498188641614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637414915310000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-2595033468566565639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,15 +487,67 @@ MonoBehaviour:
   Path: event:/Player_Theme_Battle_mx
   guid: 4a357cd71ec6634998130768fac8ec00
   Banks:
-  - {fileID: -4620191616510000366}
+  - {fileID: 5057465253644246345}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 1716327743932012227}
+  - {fileID: -6686116405605177614}
   MinDistance: 0
   MaxDistance: 0
   Length: 96219
+--- !u!114 &-1487612881220843690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Theme_Battle_mx/Enemy
+  m_EditorClassIdentifier: 
+  Name: Enemy
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-1320707761290971075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Theme_Battle_mx/Enemy
+  m_EditorClassIdentifier: 
+  Name: Enemy
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-424548779939940566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637414913590000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-379813579423095905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,18 +580,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -6795540343255854324}
-  - {fileID: -4620191616510000366}
+  - {fileID: 5057465253644246345}
   EditorEvents:
   - {fileID: -1726540591057127523}
   - {fileID: 4607927052349194743}
   - {fileID: 5042776443467391097}
+  - {fileID: 8716903186322646885}
+  - {fileID: 6265591246110122051}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -4620191616510000366}
+  - {fileID: 5057465253644246345}
   StringsBanks:
   - {fileID: -6795540343255854324}
-  stringsBankWriteTime: 637414894300000000
+  stringsBankWriteTime: 637414924130000000
   cacheVersion: 3
+--- !u!114 &110313923985960259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Theme_Battle_mx/Enemy
+  m_EditorClassIdentifier: 
+  Name: Enemy
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &999750157251281650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,7 +680,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &1783135255685208347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,6 +877,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &4191200494937884924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Theme_Battle_mx/Enemy
+  m_EditorClassIdentifier: 
+  Name: Enemy
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &4488553807021028929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,7 +944,7 @@ MonoBehaviour:
   Path: event:/Swing_Weapon
   guid: 588484695500d544b08217cdbc9ef4ba
   Banks:
-  - {fileID: -4620191616510000366}
+  - {fileID: 5057465253644246345}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -717,7 +1002,7 @@ MonoBehaviour:
   Path: event:/Footsteps
   guid: 60662186f3a34645979e6787c6da7e15
   Banks:
-  - {fileID: -4620191616510000366}
+  - {fileID: 5057465253644246345}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -725,6 +1010,81 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 160
+--- !u!114 &5057465253644246345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637414924130000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5544427064261341197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Theme_Battle_mx/Enemy
+  m_EditorClassIdentifier: 
+  Name: Enemy
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &6107698018386797235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player_Theme_Battle_mx/Enemy
+  m_EditorClassIdentifier: 
+  Name: Enemy
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &6265591246110122051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Benji_Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Benji_Footsteps
+  guid: e02de0444387ba4bbacc87b16f27ad2b
+  Banks:
+  - {fileID: 5057465253644246345}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
 --- !u!114 &6455672317909203957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -742,6 +1102,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &7478467050761918598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637414921050000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &7488863361730792420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -757,6 +1135,24 @@ MonoBehaviour:
   Path: Assets/FMOD/Music/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637414885260000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &7600092188617437704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637414922730000000
   LoadResult: 0
   FileSizes: []
   Exists: 0
@@ -813,6 +1209,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &8153305978216088980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637414921730000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &8567966563044819076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -845,6 +1259,47 @@ MonoBehaviour:
   Path: Assets/FMOD/Music/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637413223330000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &8716903186322646885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dungeon_Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Dungeon_Ambience
+  guid: d728eed6a485b14eb94a76524824acc1
+  Banks:
+  - {fileID: 5057465253644246345}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 90000
+--- !u!114 &9089911260940517281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637414922140000000
   LoadResult: 0
   FileSizes: []
   Exists: 0
