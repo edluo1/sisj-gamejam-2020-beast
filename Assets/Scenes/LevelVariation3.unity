@@ -178,7 +178,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6470780355682139977, guid: 8d58f08436669f94cadcb4eb4747bdf6, type: 3}
+    - {fileID: 6470780355682139978, guid: 8d58f08436669f94cadcb4eb4747bdf6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8d58f08436669f94cadcb4eb4747bdf6, type: 3}
 --- !u!1001 &306901113
 PrefabInstance:
@@ -12581,6 +12583,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7354866214817411889, guid: 30f554516de88db45ad3f69e257c2700, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4ee37d031c6c6d348a8e35ecb4eea580, type: 2}
+    - target: {fileID: -5256498128047257958, guid: 30f554516de88db45ad3f69e257c2700, type: 3}
+      propertyPath: footstepIntervalInSeconds
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5533019202910922643, guid: 30f554516de88db45ad3f69e257c2700, type: 3}
       propertyPath: m_RootOrder
       value: 2
