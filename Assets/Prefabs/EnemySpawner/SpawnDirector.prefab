@@ -44,5 +44,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnerObject: {fileID: 6487368194051490865, guid: d80df6b694ccee648926a84d53e42a51, type: 3}
-  enemySets: []
-  spawnLocations: []
+  enemySets:
+  - enemySet:
+    - {fileID: 3421220267999204999, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
+  - enemySet:
+    - {fileID: 891106288867882930, guid: b64c4f6f152fe514ebac7ee4365ed569, type: 3}
+    - {fileID: 891106288867882930, guid: b64c4f6f152fe514ebac7ee4365ed569, type: 3}
+    - {fileID: 891106288867882930, guid: b64c4f6f152fe514ebac7ee4365ed569, type: 3}
+    - {fileID: 891106288867882930, guid: b64c4f6f152fe514ebac7ee4365ed569, type: 3}
+    - {fileID: 891106288867882930, guid: b64c4f6f152fe514ebac7ee4365ed569, type: 3}
+  spawnLocations:
+  - {x: 8.37, y: -0.41}
+  - {x: 9.4, y: 2.28}
+  - {x: 6.36, y: 3.81}
+  - {x: 1.59, y: 3.79}
+  - {x: 0.54, y: 1.53}
+  MainAndBattleMusicPath: event:/Player_Theme_Battle_mx
+  AmbiencePath: 

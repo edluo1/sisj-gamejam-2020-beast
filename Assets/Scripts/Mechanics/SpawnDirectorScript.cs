@@ -15,10 +15,18 @@ public class SpawnDirectorScript : MonoBehaviour
     public EnemySet[] enemySets; // Spawn these enemies
     public Vector2[] spawnLocations; // at these locations
 
+    [FMODUnity.EventRef]
+    public string MainAndBattleMusicPath = "";
+
+    [FMODUnity.EventRef]
+    public string AmbiencePath = "";
+
     int currentWave;
     int enemiesLeft;
     bool waveStarted; // track if first wave spawned
     bool roomCleared;
+    FMOD.Studio.EventInstance mainBattleTheme;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +35,10 @@ public class SpawnDirectorScript : MonoBehaviour
         enemiesLeft = 0;
         waveStarted = false;
         roomCleared = false;
+
+        mainBattleTheme = FMODUnity.RuntimeManager.CreateInstance(MainAndBattleMusicPath);
+        mainBattleTheme.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        mainBattleTheme.start();
     }
 
     // Update is called once per frame
@@ -50,6 +62,9 @@ public class SpawnDirectorScript : MonoBehaviour
     {
         if (currentWave < enemySets.Length)
         {
+
+            mainBattleTheme.setParameterByName("Enemy", 1f);
+
             GameObject[] currentEnemySet = enemySets[currentWave].enemySet;
             foreach (GameObject enemy in currentEnemySet)
             {
@@ -62,6 +77,7 @@ public class SpawnDirectorScript : MonoBehaviour
         {
             Debug.Log("Room cleared!");
             roomCleared = true;
+            mainBattleTheme.setParameterByName("Enemy", 0);
         }
     }
 
