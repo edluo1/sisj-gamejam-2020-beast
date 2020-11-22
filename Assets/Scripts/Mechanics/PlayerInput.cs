@@ -27,7 +27,7 @@ public class PlayerInput : MonoBehaviour
         // Gives a value between -1 and 1
         horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
         vertical = Input.GetAxisRaw("Vertical"); // -1 is down
-        attackOrder = Input.GetKeyDown(KeyCode.R); // change this later
+        attackOrder = Input.GetKeyDown(KeyCode.LeftControl); // change this later
     } 
 
     void FixedUpdate()
