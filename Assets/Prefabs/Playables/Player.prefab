@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1893705388031528702}
   - component: {fileID: 8123630955415997797}
+  - component: {fileID: 3091199174625132103}
   m_Layer: 0
   m_Name: StickSprite
   m_TagString: Untagged
@@ -113,6 +114,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3091199174625132103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7642344317602062293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ea5600c919d494ea44551c5d70a00e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9170288230937790227
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,7 +206,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: c1226c8468f329c4ebe94249b25cdd3a, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: f374107ba66790641b6b7c9d0d9a49d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -237,7 +250,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31aabbf3c8d1ee74fa8003db414a2d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 5
+  runSpeed: 10
+  dodgeSpeed: 25
+  dashDuration: 0.25
 --- !u!61 &9170288230937790238
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -255,7 +270,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.5, y: 1.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -290,7 +305,7 @@ Animator:
   m_GameObject: {fileID: 9170288230937790227}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5051270445c841448ad62584e0357071, type: 2}
+  m_Controller: {fileID: 9100000, guid: 28a2ad192dd65c7478d98332bfc48186, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -306,12 +321,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9170288230937790227}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8743417cd8ca6b64f8ceb07c1ec648cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FootstepEventPath: 
+  FootstepEventPath: event:/Footsteps
   footstepIntervalInSeconds: 0.2
 --- !u!1001 &6901439305029792292
 PrefabInstance:
