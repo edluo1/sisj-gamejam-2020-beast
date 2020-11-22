@@ -11,10 +11,12 @@ public class BeastBehavior : MonoBehaviour
     public float leashDistance = 1.0f;
 
     Animator animator;
+    SpriteRenderer spriteRenderer;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -24,7 +26,14 @@ public class BeastBehavior : MonoBehaviour
         Vector3 targetPosition = toInteract.transform.position;
         Vector3 direction = (targetPosition - transform.position).normalized;
 
-        transform.rotation = Quaternion.FromToRotation(Vector3.right, direction);
+        if (transform.position.x > targetPosition.x)
+        {
+            spriteRenderer.flipX = false;
+        } 
+        else
+        {
+            spriteRenderer.flipX = true;
+        }
 
 
         float distance = Vector3.Distance(transform.position, toInteract.transform.position);
@@ -33,7 +42,7 @@ public class BeastBehavior : MonoBehaviour
         {
             if (distance >= leashDistance)
             {
-                transform.Translate(Vector3.right * Time.deltaTime * speed);
+                transform.Translate(direction * Time.deltaTime * speed);
             }
             else
             {
@@ -42,7 +51,7 @@ public class BeastBehavior : MonoBehaviour
         }
         else
         {
-            transform.Translate(Vector3.right * Time.deltaTime * speed);
+            transform.Translate(direction * Time.deltaTime * speed);
         }
 
         if (toInteract == target && distance <= fightDistance)

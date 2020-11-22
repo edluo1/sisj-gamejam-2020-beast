@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8309248182703391113, guid: 2a1808f2949754349ae7d3f1a7859d4e, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8309248182703391115, guid: 2a1808f2949754349ae7d3f1a7859d4e, type: 3}
       propertyPath: speed
       value: 2
@@ -460,6 +464,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5774067068854621688, guid: 346dced7d8627414da7ed10509e1d5d1, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6121220553399713493, guid: 346dced7d8627414da7ed10509e1d5d1, type: 3}
       propertyPath: player
       value: 
@@ -467,6 +475,10 @@ PrefabInstance:
     - target: {fileID: 6812338301054420313, guid: 346dced7d8627414da7ed10509e1d5d1, type: 3}
       propertyPath: m_Name
       value: Big Baddie
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812338301054420313, guid: 346dced7d8627414da7ed10509e1d5d1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 346dced7d8627414da7ed10509e1d5d1, type: 3}
@@ -1703,10 +1715,18 @@ PrefabInstance:
       propertyPath: healthBarScript
       value: 
       objectReference: {fileID: 643636763}
+    - target: {fileID: 3570726338237169749, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 28a2ad192dd65c7478d98332bfc48186, type: 2}
     - target: {fileID: 9170288230937790224, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9170288230937790224, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4723107735738678597, guid: f374107ba66790641b6b7c9d0d9a49d3, type: 3}
     - target: {fileID: 9170288230937790226, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
       propertyPath: runSpeed
       value: 1
@@ -1721,7 +1741,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170288230937790239, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8515673
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170288230937790239, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9170288230937790239, guid: a8708ebf416c16a4ea33cdb3ab38d907, type: 3}
       propertyPath: m_LocalPosition.x
