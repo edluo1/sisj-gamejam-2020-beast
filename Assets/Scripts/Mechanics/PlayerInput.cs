@@ -6,6 +6,7 @@ public class PlayerInput : MonoBehaviour
 {
     Rigidbody2D body;
     Animator animator;
+    SpriteRenderer spriteRenderer;
 
     float horizontal;
     float vertical;
@@ -18,6 +19,7 @@ public class PlayerInput : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -35,6 +37,24 @@ public class PlayerInput : MonoBehaviour
     }
 
     void handleMovement() {
+        if (horizontal != 0 || vertical != 0)
+        {
+            animator.SetTrigger("isMoving");
+        } 
+        else
+        {
+            animator.ResetTrigger("isMoving");
+        }
+
+        if (horizontal > 0.1)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (horizontal < -0.1)
+        {
+            spriteRenderer.flipX = true;
+        }
+
         if (horizontal != 0 && vertical != 0) // Check for diagonal movement
         {
             // limit movement speed diagonally, so you move at 70% speed

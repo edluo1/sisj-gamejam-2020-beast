@@ -27,5 +27,9 @@ public class BigBaddie : MonoBehaviour
         {
             spriteRenderer.flipX = true;
         }
+        else
+        {
+            spriteRenderer.flipX = false;
+        }
     }
 }
