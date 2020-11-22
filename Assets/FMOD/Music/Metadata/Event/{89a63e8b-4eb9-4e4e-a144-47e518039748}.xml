@@ -96,7 +96,7 @@
 			<value>true</value>
 		</property>
 		<property name="triggerProbability">
-			<value>5</value>
+			<value>6.5</value>
 		</property>
 		<property name="start">
 			<value>0.0050000000000000001</value>
@@ -105,10 +105,11 @@
 			<value>2.2450000000000001</value>
 		</property>
 		<property name="pitch">
-			<value>8</value>
+			<value>6.5</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{4cb2c1ba-5b7b-499e-8249-c19a7eee710c}</destination>
+			<destination>{25b9dae7-a1bd-4ce7-b841-f43ef069c0ac}</destination>
 		</relationship>
 		<relationship name="fadeOutCurve">
 			<destination>{e6f945c9-fdc0-49b0-b5b6-3b2af7386526}</destination>
@@ -166,6 +167,11 @@
 		</property>
 		<property name="amount">
 			<value>5.5999999</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{25b9dae7-a1bd-4ce7-b841-f43ef069c0ac}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
 		</property>
 	</object>
 	<object class="FadeCurve" id="{e6f945c9-fdc0-49b0-b5b6-3b2af7386526}">
