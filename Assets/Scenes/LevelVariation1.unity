@@ -12433,6 +12433,10 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[121].second.m_TileObjectToInstantiateIndex
       value: 65535
       objectReference: {fileID: 0}
+    - target: {fileID: 7939525461260473903, guid: 2a17b035444e98044808adc5921b1a19, type: 3}
+      propertyPath: sceneName
+      value: Scenes/LevelVariation3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a17b035444e98044808adc5921b1a19, type: 3}
 --- !u!1001 &6726447757978728316

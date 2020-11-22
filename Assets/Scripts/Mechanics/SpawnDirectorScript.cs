@@ -77,6 +77,10 @@ public class SpawnDirectorScript : MonoBehaviour
         {
             Debug.Log("Room cleared!");
             roomCleared = true;
+            GameObject[] exits = GameObject.FindGameObjectsWithTag("Exit");
+            foreach (GameObject exit in exits) {
+                exit.GetComponent<RoomExitScript>().OpenRoomExit();
+            }
             mainBattleTheme.setParameterByName("Enemy", 0);
         }
     }

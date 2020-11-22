@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Tilemaps;
 
 public class RoomExitScript : MonoBehaviour
 {
@@ -30,8 +31,8 @@ public class RoomExitScript : MonoBehaviour
     	animator.SetBool("Enterable", true);
     }
 
-    public void OnTriggerEnter() {
-    	if (sceneName) {
+    void OnTriggerEnter2D(Collider2D other) {
+    	if (!string.IsNullOrEmpty(sceneName)) {
     		SceneManager.LoadScene(sceneName);
     	}
     	else {
