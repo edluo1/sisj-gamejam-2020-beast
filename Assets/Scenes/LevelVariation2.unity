@@ -430,7 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enterable: 0
-  sceneName: 
+  sceneName: Scenes/ending
 --- !u!19719996 &560521086
 TilemapCollider2D:
   m_ObjectHideFlags: 0
