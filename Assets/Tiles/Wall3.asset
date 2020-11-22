@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: cave-sliced_10
+  m_Name: Wall3
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: da1617be84061fc44a6cf0f9477bd74c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 46759f33808bdbc49b832044400c649f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
