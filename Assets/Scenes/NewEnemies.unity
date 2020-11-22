@@ -2866,7 +2866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FootstepEventPath: event:/Soot_steps
-  footstepIntervalInSeconds: 0.03
+  footstepIntervalInSeconds: 0.3
 --- !u!1 &2005145622 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3421220267999204999, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
