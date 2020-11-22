@@ -194,6 +194,9 @@
 		<property name="length">
 			<value>17</value>
 		</property>
+		<property name="pitch">
+			<value>1.39999998</value>
+		</property>
 		<property name="maximumTimeBetweenSounds">
 			<value>9500</value>
 		</property>
@@ -206,6 +209,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{27459d86-884a-4743-be5f-fad4146d5724}">
+		<property name="volume">
+			<value>1.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 3</value>
 		</property>
@@ -241,6 +247,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{a4e6ec3b-4c0f-48ce-9b87-77978cdb5664}">
+		<property name="volume">
+			<value>2</value>
+		</property>
 		<property name="name">
 			<value>Audio 4</value>
 		</property>
@@ -366,7 +375,7 @@
 	<object class="MixerBusFader" id="{0715e264-d8a9-4eb9-bbeb-faeb26217cea}" />
 	<object class="SFXReverbEffect" id="{b882e2ba-cd06-415a-bbb9-7b5847b2bed9}">
 		<property name="decayTime">
-			<value>20000</value>
+			<value>1100</value>
 		</property>
 		<property name="lowShelfFrequency">
 			<value>300</value>
