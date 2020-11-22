@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 6470780355682139979}
   - component: {fileID: 6470780355682139972}
   - component: {fileID: 6470780355682139973}
-  - component: {fileID: 6470780355682139978}
-  - component: {fileID: 6470780355682139977}
   - component: {fileID: 6361880480305814027}
+  - component: {fileID: 5969381808178744521}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -86,7 +85,7 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6470780355682139974}
   m_Enabled: 1
---- !u!114 &6470780355682139978
+--- !u!114 &6361880480305814027
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,21 +94,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6470780355682139974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f1b1bda765d1bc46922b8dabce1db03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: Enemy
-  Event: event:/Player_Theme_Battle_mx
-  PlayEvent: 1
-  StopEvent: 5
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
---- !u!114 &6470780355682139977
+  maxCameraSpeed: 1.4
+--- !u!114 &5969381808178744521
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,15 +121,3 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
---- !u!114 &6361880480305814027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6470780355682139974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f1b1bda765d1bc46922b8dabce1db03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

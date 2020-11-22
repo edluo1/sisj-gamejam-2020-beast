@@ -25,7 +25,7 @@ public class SpawnDirectorScript : MonoBehaviour
     int enemiesLeft;
     bool waveStarted; // track if first wave spawned
     bool roomCleared;
-    FMOD.Studio.EventInstance mainBattleTheme;
+    public FMOD.Studio.EventInstance mainBattleTheme;
 
 
     // Start is called before the first frame update
