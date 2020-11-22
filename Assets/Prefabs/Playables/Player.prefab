@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FootstepEventPath: event:/Footsteps
-  footstepIntervalInSeconds: 0.2
+  footstepIntervalInSeconds: 0
 --- !u!1001 &6901439305029792292
 PrefabInstance:
   m_ObjectHideFlags: 0
