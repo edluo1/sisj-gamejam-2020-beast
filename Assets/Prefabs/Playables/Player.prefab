@@ -321,13 +321,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9170288230937790227}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8743417cd8ca6b64f8ceb07c1ec648cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   FootstepEventPath: event:/Footsteps
-  footstepIntervalInSeconds: 0.2
+  footstepIntervalInSeconds: 0.04
 --- !u!1001 &6901439305029792292
 PrefabInstance:
   m_ObjectHideFlags: 0
