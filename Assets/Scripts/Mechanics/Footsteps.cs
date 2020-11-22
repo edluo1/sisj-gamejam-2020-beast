@@ -52,5 +52,7 @@ public class Footsteps : MonoBehaviour
         footsteps.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         footsteps.start();
         footsteps.release();
+
+        Debug.Log("foot");
     }
 }

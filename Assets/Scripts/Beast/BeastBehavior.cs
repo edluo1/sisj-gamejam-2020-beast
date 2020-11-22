@@ -17,6 +17,10 @@ public class BeastBehavior : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectsWithTag("Player")[0];
+        }
     }
 
     void Update()

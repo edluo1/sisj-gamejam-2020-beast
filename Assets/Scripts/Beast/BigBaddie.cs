@@ -13,6 +13,10 @@ public class BigBaddie : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectsWithTag("Player")[0];
+        }
     }
 
     // Update is called once per frame

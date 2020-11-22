@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestScenes/BenjiFriendship.unity
-    guid: 7623ead94eebfa9419c3ac02d7a7962c
-  - enabled: 1
     path: Assets/Scenes/LevelVariation3.unity
     guid: 94c8663cf8eb3864eb0e92c5e6a0e8f7
   - enabled: 1
