@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -48,6 +48,8 @@ public class PlayerInput : MonoBehaviour
     void handleAttackOrder() {
         if (attackOrder) {
             animator.Play("Player_Attack");
-        }
-    }
-}
+
+   }
+  }
+ }
+    
