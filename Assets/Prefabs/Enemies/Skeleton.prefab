@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 282422934241013658}
   - component: {fileID: 1057824616034046005}
   - component: {fileID: 7190159916492439924}
+  - component: {fileID: -1169091683202072020}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -165,6 +166,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isTargeted: 0
   reticule: {fileID: 484664386716918292, guid: 50ab2860a18d24a4387845e9ddb04865, type: 3}
+--- !u!114 &-1169091683202072020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2439983727803110594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8743417cd8ca6b64f8ceb07c1ec648cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FootstepEventPath: event:/Skeleton_Sounds
+  footstepIntervalInSeconds: 0.07
 --- !u!1001 &4617894275171931480
 PrefabInstance:
   m_ObjectHideFlags: 0
