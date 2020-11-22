@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelVariation2.unity
     guid: b7d1a6f319d5b1e40899c744a913e783
+  - enabled: 1
+    path: Assets/Scenes/ending.unity
+    guid: 100655a4840b8a0488d2aef945eb044f
   m_configObjects: {}
