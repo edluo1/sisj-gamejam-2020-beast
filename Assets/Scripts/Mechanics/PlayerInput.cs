@@ -49,6 +49,7 @@ public class PlayerInput : MonoBehaviour
         if (attackOrder) {
             animator.Play("Player_Attack");
 
+
    }
   }
  }

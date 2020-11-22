@@ -251,7 +251,7 @@ MonoBehaviour:
   CollisionTag: Enemy
   Event: event:/Player_Theme_Battle_mx
   PlayEvent: 1
-  StopEvent: 5
+  StopEvent: 6
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
