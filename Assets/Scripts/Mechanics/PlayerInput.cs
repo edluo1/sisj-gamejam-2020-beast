@@ -10,14 +10,19 @@ public class PlayerInput : MonoBehaviour
     float horizontal;
     float vertical;
     bool attackOrder;
-    float moveLimiter = 0.7071f;
+    bool dodgeOrder;
 
-    public float runSpeed = 20.0f;
+    bool Dashing;
+
+    public float runSpeed = 10f;
+    public float dodgeSpeed = 25f;
+    public float dashDuration = 0.25f;
 
     void Start ()
     {
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        Dashing = false;
     }
 
     void Update()
@@ -26,31 +31,41 @@ public class PlayerInput : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
         vertical = Input.GetAxisRaw("Vertical"); // -1 is down
         attackOrder = Input.GetKeyDown(KeyCode.R); // change this later
+        dodgeOrder = Input.GetKeyDown(KeyCode.Space);
     } 
 
     void FixedUpdate()
     {
         handleMovement();
         handleAttackOrder();
+        handleDodge();
     }
 
     void handleMovement() {
-        if (horizontal != 0 && vertical != 0) // Check for diagonal movement
-        {
-            // limit movement speed diagonally, so you move at 70% speed
-            horizontal *= moveLimiter;
-            vertical *= moveLimiter;
-        } 
-
-        body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        if (!Dashing) { // let coroutine handle it
+            body.velocity = new Vector2(horizontal, vertical).normalized * runSpeed;
+        }
     }
 
     void handleAttackOrder() {
         if (attackOrder) {
             animator.Play("Player_Attack");
+        }
+    }
 
+    void handleDodge() {
+        if (dodgeOrder) {
+            StartCoroutine(Dodge(body.velocity.normalized));
+        }
+    }
 
-   }
-  }
- }
-    
+    IEnumerator Dodge(Vector2 direction) {
+        Dashing = true;
+        body.velocity = direction * dodgeSpeed;
+        transform.Find("Hurtbox").gameObject.GetComponent<HurtboxScript>().active = false;
+        yield return new WaitForSeconds(dashDuration);
+        Dashing = false;
+        transform.Find("Hurtbox").gameObject.GetComponent<HurtboxScript>().active = true;
+        yield return null;
+    }
+}

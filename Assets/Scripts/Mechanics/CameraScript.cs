@@ -6,7 +6,7 @@ using UnityEngine;
 public class CameraScript : MonoBehaviour
 {
 	List<GameObject> allFocusObjects;
-	float maxCameraSpeed = 1.4f;
+	public float maxCameraSpeed = 1.4f;
     // Start is called before the first frame update
     void Start()
     {
