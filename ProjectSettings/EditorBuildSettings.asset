@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScenes/BenjiFriendship.unity
     guid: 7623ead94eebfa9419c3ac02d7a7962c
+  - enabled: 1
+    path: Assets/Scenes/LevelVariation3.unity
+    guid: 94c8663cf8eb3864eb0e92c5e6a0e8f7
+  - enabled: 1
+    path: Assets/Scenes/LevelVariation1.unity
+    guid: 550d14cb3b0fb7a49901531532b79336
+  - enabled: 1
+    path: Assets/Scenes/LevelVariation2.unity
+    guid: b7d1a6f319d5b1e40899c744a913e783
   m_configObjects: {}
