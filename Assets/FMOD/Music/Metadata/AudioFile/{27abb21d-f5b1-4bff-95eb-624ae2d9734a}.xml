@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{27abb21d-f5b1-4bff-95eb-624ae2d9734a}">
+		<property name="assetPath">
+			<value>Cartoon_Dull_Boing__03.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.4017233560090703</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ded193ad-7efd-46e5-8d52-cbaeb0877b7b}</destination>
+		</relationship>
+	</object>
+</objects>

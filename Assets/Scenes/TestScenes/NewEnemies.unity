@@ -123,6 +123,34 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &152418493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8309248182703391118, guid: 2a1808f2949754349ae7d3f1a7859d4e, type: 3}
+  m_PrefabInstance: {fileID: 1620460208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &152418501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152418493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Benji_Gibberish
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &424464437
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +251,7 @@ MonoBehaviour:
   CollisionTag: Enemy
   Event: event:/Player_Theme_Battle_mx
   PlayEvent: 1
-  StopEvent: 5
+  StopEvent: 6
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -2820,6 +2848,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1780074537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 891106288867882930, guid: b64c4f6f152fe514ebac7ee4365ed569, type: 3}
+  m_PrefabInstance: {fileID: 6096687671700686501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1780074546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780074537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8743417cd8ca6b64f8ceb07c1ec648cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FootstepEventPath: event:/Soot_steps
+  footstepIntervalInSeconds: 0.3
 --- !u!1 &2005145622 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3421220267999204999, guid: 9d04378115ad82e47b51fd7688becafa, type: 3}
