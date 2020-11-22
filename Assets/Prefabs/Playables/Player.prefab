@@ -311,6 +311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8743417cd8ca6b64f8ceb07c1ec648cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FootstepEventPath: 
+  footstepIntervalInSeconds: 0.2
 --- !u!1001 &6901439305029792292
 PrefabInstance:
   m_ObjectHideFlags: 0
