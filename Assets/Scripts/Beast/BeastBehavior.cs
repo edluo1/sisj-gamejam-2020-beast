@@ -8,6 +8,7 @@ public class BeastBehavior : MonoBehaviour
     public GameObject target;
     public float fightDistance = 1.7f;
     public float speed = 4f;
+    public float leashDistance = 1.0f;
 
     Animator animator;
 
@@ -25,9 +26,25 @@ public class BeastBehavior : MonoBehaviour
 
         transform.rotation = Quaternion.FromToRotation(Vector3.right, direction);
 
-        transform.Translate(Vector3.right * Time.deltaTime * speed);
 
         float distance = Vector3.Distance(transform.position, toInteract.transform.position);
+
+        if (toInteract == player)
+        {
+            if (distance >= leashDistance)
+            {
+                transform.Translate(Vector3.right * Time.deltaTime * speed);
+            }
+            else
+            {
+                // Don't move too close to player
+            }
+        }
+        else
+        {
+            transform.Translate(Vector3.right * Time.deltaTime * speed);
+        }
+
         if (toInteract == target && distance <= fightDistance)
         {
             Attack(target);
